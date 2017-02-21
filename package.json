@@ -5,8 +5,9 @@
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "test": "cross-env NODE_ENV=test nyc --reporter=text --reporter=lcov ava",
-    "build": "gulp"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
