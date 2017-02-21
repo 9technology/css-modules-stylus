@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "indent": ["error", 4, {
+      "SwitchCase": 1
+    }],
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": [
+        "test/**",
+        "gulpfile.babel.js"
+      ]
+    }]
+  }
+}
