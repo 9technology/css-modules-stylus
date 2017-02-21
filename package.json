@@ -25,9 +25,10 @@
     "stylus": "^0.54.5"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.18.2",
     "babel-eslint": "^7.1.0",
     "babel-plugin-istanbul": "^3.0.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.22.0",
     "babel-preset-env": "^1.1.8",
     "babel-register": "^6.9.0",
     "coveralls": "^2.11.16",
@@ -40,7 +41,7 @@
     "eslint-plugin-react": "^6.7.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "nyc": "^9.0.1",
+    "nyc": "^10.1.2",
     "proxyquire": "^1.7.10",
     "run-sequence": "^1.2.2",
     "sinon": "^1.17.4"

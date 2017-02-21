@@ -3,7 +3,10 @@
     ["env", {
       "targets": {
         "node": 4
-      }
+      },
+      "include": [
+        "transform-es2015-shorthand-properties"
+      ]
     }]
   ],
   "env": {
