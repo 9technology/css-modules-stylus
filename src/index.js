@@ -1,3 +1,3 @@
 import stylus from 'stylus';
 
-module.exports = (css, filename) => stylus(css).set('filename', filename).render();
+module.exports = (contents, filename) => stylus(contents).set('filename', filename).render();

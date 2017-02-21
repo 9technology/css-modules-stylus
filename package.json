@@ -13,7 +13,10 @@
     "url": "git+https://github.com/9technology/css-modules-stylus.git"
   },
   "author": "9Technology <opensource@nine.com.au>",
-  "license": "UNLICENSED",
+  "contributors": [
+    "Christopher Turner <turner296@gmail.com>"
+  ],
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/9technology/css-modules-stylus/issues"
   },
