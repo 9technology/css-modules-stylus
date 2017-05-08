@@ -16,6 +16,20 @@ hook({
 });
 ```
 
+### Stylus Options
+
+Passing options to stylus can be done by creating a default stylus instance using `.defaults()`.
+
+```js
+import { defaults as stylus } from 'css-modules-stylus';
+
+hook({
+    preprocessCss: stylus({
+        use: [ plugin() ]
+    })
+});
+```
+
 ### Babel Plugin
 
 _.babelrc_
@@ -36,6 +50,9 @@ _.babelrc_
 #### `cssModulesStylus(contents, filename)`
 - `contents` _String_ The contents of the stylus file.
 - `filename` _String_ The filename of the stylus file.
+
+#### `.defaults([options])`
+- `options` _Object_ Stylus [Renderer options](https://github.com/stylus/stylus/blob/0.54.5/lib/renderer.js#L36-L44).
 
 ## License
 ---

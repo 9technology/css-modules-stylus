@@ -8,8 +8,7 @@ const raw = '*\n\tbackground: red;';
 const compiled = '* { background: red; }';
 
 const render = sandbox.stub().returns(compiled);
-const set = sandbox.stub().returns({ render });
-const stylus = sandbox.stub().returns({ set });
+const stylus = sandbox.stub().returns({ render });
 
 const preprocessor = proxy('../src', {
     stylus,
@@ -24,7 +23,12 @@ test('calls stylus with given css', (t) => {
 
 test('calls set with (filename, arg[1])', (t) => {
     preprocessor(raw, 'foo.styl');
-    t.truthy(set.calledWith('filename', 'foo.styl'));
+    t.truthy(stylus.calledWith(
+        raw,
+        sinon.match({
+            filename: 'foo.styl',
+        }),
+    ));
 });
 
 test('calls stylus render', (t) => {
